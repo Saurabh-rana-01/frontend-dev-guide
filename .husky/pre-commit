@@ -1,0 +1,8 @@
+#!/bin/sh
+# .husky/pre-commit
+# Git hook to run linting and formatting before commits
+
+. "$(dirname "$0")/_/husky.sh"
+
+npm run lint:fix
+npm run format

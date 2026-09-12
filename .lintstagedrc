@@ -1,0 +1,15 @@
+# .lintstagedrc
+# Configuration for running linters on staged files
+
+{
+  "*.{js,jsx}": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "*.{css,scss}": [
+    "prettier --write"
+  ],
+  "*.{json,md,html}": [
+    "prettier --write"
+  ]
+}
